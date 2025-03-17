@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>BEAT ACTIVE</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Wittayakarn&display=swap');
+    
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px; /* ป้องกันเนื้อหาติดขอบ */
+            box-sizing: border-box;
+        }
+    
+        .container {
+            background-color: white;
+            color: black;
+            padding: 50px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 897px;
+        }
+    
+        h1 {
+            font-size: 24px;
+            padding: 0px;
+        }
+    
+        p {
+            font-size: 16px;
+            padding: 0px 120px;
+        }
+    
+        img  {
+            width: 20%;
+        }
+    
+        button {
+            background-color: #FF5100;
+            border: none;
+            border-radius: 22px;
+            color: white;
+            font-size: 16px;
+            padding: 20px 100px;
+            font-weight: bold;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    
+        /* Responsive for iPad */
+        @media (max-width: 1024px) {
+            .container {
+                max-width: 700px;
+                padding: 40px;
+            }
+    
+            h1 {
+                font-size: 22px;
+            }
+    
+            p {
+                font-size: 15px;
+                padding: 0px 80px;
+            }
+    
+            img {
+                width: 25%;
+            }
+    
+            button {
+                font-size: 14px;
+                padding: 15px 80px;
+                border-radius: 15px;
+            }
+        }
+    
+        /* Responsive for Mobile */
+        @media (max-width: 768px) {
+            .container {
+                max-width: 90%;
+                padding: 30px;
+            }
+    
+            h1 {
+                font-size: 20px;
+            }
+    
+            p {
+                font-size: 14px;
+                padding: 0px 10px;
+            }
+    
+            img {
+                width: 30%;
+            }
+    
+            button {
+                font-size: 14px;
+                padding: 15px 50px;
+                border-radius: 15px;
+            }
+        }
+    
+        /* Extra small devices (phone) */
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+    
+            h1 {
+                font-size: 14px;
+            }
+    
+            p {
+                font-size: 10px;
+            }
+    
+            img {
+                width: 40%;
+            }
+    
+            button {
+                font-size: 14px;
+                padding: 12px 40px;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <img src="assets/check.png" alt="check">
+        <h1>Thank you for your purchase!!</h1>
+        <h1>your order was completed successfully</h1>
+        <p>An email receipt including the details about your order has been sent to the email
+            address provided. Please keep it for your records and show your email at the
+            ticket counter to redeem your ticket.</p>
+        <button id="confirmButton">Confirm</button>
+    </div>
+</body>
+</html>
+<script>
+    document.getElementById("confirmButton").addEventListener("click", function() {
+    window.location.href = "https://beatactivethailand.com/";});
+</script>
